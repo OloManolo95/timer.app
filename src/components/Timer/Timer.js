@@ -6,7 +6,7 @@ const Timer = props => {
             <span>{("0" + Math.floor((props.time / 360000) % 60)).slice(-2)}:</span>
             <span>{("0" + Math.floor((props.time / 60000) % 60)).slice(-2)}:</span>
             <span>{("0" + Math.floor((props.time / 1000) % 60)).slice(-2)}.</span>
-            <span>{("0" + ((props.time / 10) % 100)).slice(-3)}</span>
+            <span>{("0" + ((props.time) % 1000)).slice(-3)}</span>
         </div>
     );
 };

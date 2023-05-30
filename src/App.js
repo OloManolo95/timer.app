@@ -15,8 +15,8 @@ const App = () => {
     let interval = null;
     if (timerOn) {
         interval = setInterval(()  => {
-            setTime(prevTime => prevTime + 10)
-        }, 10)
+            setTime(prevTime => prevTime + 1)
+        }, 1)
     } else {
         clearInterval(interval)
     }
